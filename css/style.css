@@ -144,5 +144,6 @@ footer {
         padding-bottom: 12px;
         border-bottom: 2px solid #0065fc;
         border-top: none;
+        margin-bottom: -18px;
     }
 }
