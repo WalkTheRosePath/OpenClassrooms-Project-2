@@ -1,17 +1,148 @@
-/*  */
+/* Reset and General Styles
+---------------------------------------------*/
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
-/* Format everything*/
-*{
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
 }
 
-/* Box-sizing property */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+/* Header Styles
+---------------------------------------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 5px 20px;
+}
+
+header img {
+    width: 90px;
+    max-height: 90px;
+    margin-top: 5px;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation Styles
+---------------------------------------------*/
+.nav-links a {
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+
+.nav-links a:hover {
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
 }
 
 
+li {
+    display: inline;
+}
+
+ul.no-bullets {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Main Content Styles
+---------------------------------------------*/
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+/* Form Styles
+---------------------------------------------*/
+form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Footer Styles
+---------------------------------------------*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Media Queries
+---------------------------------------------*/
+@media (max-width: 992px) {
+    /* Still need to add styles for tablet view */
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    header img {
+        width: 90px;
+        max-height: 90px;
+        margin-top: 20px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    ul.no-bullets {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav-links {
+        border-bottom: 2px solid #f2f2f2;
+        
+    }
+
+    .nav-links a:hover {
+        color: #0065fc;
+        border-top: none;
+    }
+
+    .nav-links li {
+        width: 100%;
+        padding-bottom: 14px;
+        margin-bottom: -1.5px;
+        text-align: center;
+    }
+
+    .nav-links li:hover {
+        padding-bottom: 12px;
+        border-bottom: 2px solid #0065fc;
+        border-top: none;
+    }
+}

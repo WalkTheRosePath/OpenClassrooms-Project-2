@@ -1,55 +1,87 @@
 <!DOCTYPE html>
-<html lang = en>
+<html lang=en>
 
-    <head>
-        <!-- Charset --->
-        <meta charset="utf-8">
+<head>
+    <!-- Charset -->
+    <meta charset="utf-8">
 
-        <!-- Viewport --->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Title --->
-        <title>Booki</title>
-        <meta name="description" content="Booki accomodations and activities" />
-        
-        <!-- Normalize (instead of reset) --->
-        <link rel="stylesheet" href="/css/normalize.css">
+    <!-- Title -->
+    <title>Booki</title>
+    <meta name="description" content="Booki accomodations and activities">
 
-        <!-- Style --->
-        <link rel="stylesheet" href="/css/style.css">
+    <!-- Normalize (instead of reset) -->
+    <link rel="stylesheet" href="/css/normalize.css">
 
-        <!-- Font Awesome --->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
-    
-        <!-- Import Raleway from Google Font --->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    </head>
+    <!-- Style -->
+    <link rel="stylesheet" href="/css/style.css">
 
-    <body>
-        <!-- Header -->
-        <section class="header">
-            <nav>
-                <img src="images/logo/Booki.png"> 
-                <div class="nav-links">
-                    <ul>
-                        <li><a href="index.html">Accomodations</a></li> 
-                        <li><a href="index.html">Activities</a></li> 
-                    </ul>
-                </div>
-            </nav>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9f4e28612a.js" crossorigin="anonymous"></script>
+
+    <!-- Import Raleway from Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html">
+            <img alt="Booki logo" src="images/logo/Booki.png">
+        </a>
+        <nav class="nav-links">
+            <ul class="no-bullets">
+                <li><a href="#accommodations">Accommodations</a></li>
+                <li><a href="#activities">Activities</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <h1>Find a place for your dream vacation</h1>
+        <p>Downtown or in nature</p>
+        <form>
+            <i class="fa fa-location-dot"></i>
+            <input type="text">
+            <button type="button">Search</button>
+            <div class="filters">
+                <h2>Filters</h2>
+                <i class="fa fa-money-bill-1-wave"></i>
+                <h2>Low cost</h2>
+                <i class="fa fa-child-reaching"></i>
+                <h2>Family-friendly</h2>
+                <i class="fa fa-heart"></i>
+                <h2>Romantic</h2>
+                <i class="fa fa-dog"></i>
+                <h2>Pets allowed</h2>
+            </div>
+        </form>
+        <i class="fa fa-info-circle"></i>
+        <p>More than 500 accomodations are available in this city</p>
+        <section id="accommodations">
+            <h2>Accommodations in Marseille</h2>
         </section>
+        <section id="activities">
+            <h2>Most Popular</h2>
+        </section>
+        <section>
+            <h2>Activities in Marseille</h2>
+        </section>
+    </main>
 
-        <!--  -->
+    <!-- Footer -->
+    <footer>
+        <h2>About</h2>
+        <h2>Our Accomodations</h2>
+        <h2>Assistance</h2>
+    </footer>
+</body>
 
-        <!--  -->
-
-        <!--  -->
-
-        <!--  -->
-
-        <!--  -->
-        
-    </body>
 </html>
